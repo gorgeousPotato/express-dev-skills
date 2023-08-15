@@ -18,3 +18,5 @@ function show(req, res) {
     title: "Skill details",
   });
 }
+
+
