@@ -1,0 +1,15 @@
+<%- include('../partials/header') %>
+<form action="/skills" method="POST">
+  <input type="text" name="name" placeholder="skill name" size="58" /><br />
+  <textarea
+    type="text"
+    name="description"
+    placeholder="description"
+    rows="6"
+    cols="50"
+  ></textarea
+  ><br />
+  <button type="submit">Add New Skill</button>
+</form>
+
+<%- include('../partials/footer') %>

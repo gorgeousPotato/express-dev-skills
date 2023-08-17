@@ -1,11 +1,14 @@
 <%- include('../partials/header') %>
-    <div class="flex-center">
-      <ul>
-        <% skills.forEach(skill => {%>
-        <li><a href="/skills/<%= skill.id %>"><%= skill.name %></a></li>
-  
-        <%}) %>
-      </ul>
-    </div>
+<div class="flex-center">
+  <div>
+    <ul>
+      <% skills.forEach(skill => {%>
+      <li><a href="/skills/<%= skill.id %>"><%= skill.name %></a></li>
+
+      <%}) %>
+    </ul>
+    <a class="a-button" href="/skills/new">Add New Skill</a>
+  </div>
+</div>
 
 <%- include('../partials/footer') %>
