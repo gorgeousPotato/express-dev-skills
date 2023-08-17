@@ -40,6 +40,7 @@ module.exports = {
   getAll,
   getOne,
   create,
+  deleteOne,
 };
 
 function getAll() {
@@ -55,4 +56,10 @@ function getOne(id) {
 function create(skill) {
   skill.id = Date.now() % 1000000;
   skills.push(skill);
+}
+
+function deleteOne(id) {
+  id = parseInt(id);
+  const idx = skills.findIndex(skill => skill.id === id);
+  skills.splice(idx, 1);
 }

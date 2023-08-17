@@ -41,7 +41,6 @@ h1 {
 }
 
 ul {
-  list-style-type: none;
   padding-left: 0;
 }
 
@@ -77,4 +76,26 @@ a:hover {
 .a-button:hover {
   background-color: #4ecca3;
   text-decoration: none;
+}
+
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.delete-form button {
+  border-radius: 100px;
+  border: none;
+  background-color: #393e46;
+  color: #eeeeee;
+}
+
+.delete-form button:hover {
+  background-color: #4ecca3;
+  color: #393e46;
+}
+
+li {
+  list-style: none;
+  margin: 4px auto;
 }
