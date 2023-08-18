@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+<div class="flex-center">
+  <form
+    action="/skills/<%= skill.id %>?_method=PUT"
+    method="POST"
+    class="edit-form"
+  >
+    <input
+      type="text"
+      name="name"
+      value="<%= skill.name %>"
+      size="100"
+      class="edit-input"
+    /><br />
+    <textarea type="text" name="description" rows="10" cols="100">
+  <%= skill.description %></textarea
+    ><br />
+    <button type="submit">Edit Skill</button>
+  </form>
+</div>
+
+<%- include('../partials/footer') %>

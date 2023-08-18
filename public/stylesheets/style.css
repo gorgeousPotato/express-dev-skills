@@ -99,3 +99,41 @@ li {
   list-style: none;
   margin: 4px auto;
 }
+
+textarea {
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  border: none;
+}
+
+.edit-input {
+  padding: 10px;
+  border-radius: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  border: none;
+}
+
+.edit-form button {
+  border-radius: 100px;
+  border: none;
+  background-color: #4ecca3;
+  color: #232931;
+  padding: 10px 20px;
+  text-align: center;
+  width: 20%;
+}
+
+.edit-form button:hover {
+  background-color: #393e46;
+  color: #4ecca3;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  margin-top: 100px;
+}

@@ -1,15 +1,23 @@
 <%- include('../partials/header') %>
-<form action="/skills" method="POST">
-  <input type="text" name="name" placeholder="skill name" size="58" /><br />
-  <textarea
-    type="text"
-    name="description"
-    placeholder="description"
-    rows="6"
-    cols="50"
-  ></textarea
-  ><br />
-  <button type="submit">Add New Skill</button>
-</form>
+<div class="flex-center">
+  <form action="/skills" method="POST" class="edit-form">
+    <input
+      type="text"
+      name="name"
+      placeholder="skill name"
+      size="100"
+      class="edit-input"
+    /><br />
+    <textarea
+      type="text"
+      name="description"
+      placeholder="description"
+      rows="10"
+      cols="100"
+    ></textarea
+    ><br />
+    <button type="submit">Add New Skill</button>
+  </form>
+</div>
 
 <%- include('../partials/footer') %>
